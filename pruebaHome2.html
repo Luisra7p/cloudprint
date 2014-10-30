@@ -1,0 +1,157 @@
+<html>
+
+<head>
+	<title>Tabla de insertar</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+</head>
+
+
+<body>
+	
+<!--   ++++++++++++++++++++++++++++ BARRA SUPERIOR COMIENZO++++++++++++++++++++++++++++++++++++++++-->
+
+<div class= "container" >
+<div class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <!--   PRIMER ENLACE EN LA BARRA -->
+    <a class="navbar-brand" href="home2">Print Center</a>
+    <!--   SEGUNDO ENLACE EN LA BARRA -->
+  </div>
+  <div class="navbar-collapse collapse navbar-inverse-collapse">
+    <ul class="nav navbar-nav">
+      
+  
+  
+
+      <li><a href="./Form">Ingresar</a></li>
+       <li><a href="./BuscarUpdate">Actualizar</a></li>
+             <li><a href="./Borrar">Borrar</a></li>
+   
+  <!--   lISTA DROPDOWN PARA MOSTRAR VARIAS ELECCIONES-->
+      
+      <!-- SEARCH EN LA BARRA  -->
+
+    </ul>
+    <form class="navbar-form navbar-left">
+      <input class="form-control col-lg-8" placeholder="Search" type="text">
+    </form>
+
+    <!--  pRIMER ENLACE EN LA PARTE DERECHA DE LA BARRA-->
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="javascript:verificarEntrada()" >Salir</a></li>
+
+
+
+<script type="text/javascript">
+  function verificarEntrada()
+  {
+    if (window.confirm('Desea salir de Print Center?'))
+    {
+      window.location='./Login';
+    }
+    else
+    {
+      //window.alert('No hay problema');
+    }
+  }
+</script>
+
+   <!--//<a href="javascript:verificarEntrada()">Ingresar a La Nación</a>-->
+
+
+
+      <!-- SEGUNDO GRUPO DE ENLACES EN FORMA DROPDOWN  -->
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./BuscarUpdate">Action</a></li>
+          <li><a href="./Form">Another action</a></li>
+          <li><a href="./tabla.php">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+<!--   ++++++++++++++++++++++++++++ BARRA SUPERIOR FINAL++++++++++++++++++++++++++++++++++++++++-->
+
+	  <br/><br/>
+
+		
+<div class= "container" >
+<div class="span8 center">
+<div class="panel panel-default">
+  <div class="panel-body">
+    
+
+
+
+<form action="Update1.php" method="post">
+	<div class="form-group">
+		      <label for="input" class="col-lg-2 control-label">Rut Cliente a modificar: </label>
+		      		<div class="col-lg-10">
+		        <input class="form-control" name="rut" placeholder="rut" type="text">
+		         	</div>
+	</div>
+
+		    <br/><br/>
+
+		    <div class="form-group">
+		      <div class="col-lg-10 col-lg-offset-2">
+		      	<br/><br/>
+		        <a href="./home" class="btn btn-default">Cancel</a>
+		        <button type="submit" class="btn btn-primary">Buscar en Base de Datos</button>
+		        <button TYPE="RESET" class="btn btn-default">Limpiar</button>  
+		      </div>
+		    </div>
+		  
+
+
+
+
+<!--  TERMINA EL FORM Y LO PROXIMO ES EL PANEL BODY-->
+
+  </div>
+</div>
+</div>
+</div>
+		</form>
+<!--  PANEL BODY-->
+
+<!-- ==============================     BOTONES AL FINAR DE LA PAGINA     ========================================-->
+
+<div class= "container" >
+<div class="span8 center">
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+</fieldset>
+		  <br/><br/>
+
+		  <div class="btn-group btn-group-justified">
+					  <a href="./BuscarUpdate.php" class="btn btn-default">Insertar</a>
+					  <a href="./home.php" class="btn btn-default">Inicio</a>
+					  <a href="./borrar.php" class="btn btn-default">Borrar Datos </a>
+			</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==============================     BOTONES AL FINAR DE LA PAGINA     ========================================-->
+
+
+</body>
+</html>
