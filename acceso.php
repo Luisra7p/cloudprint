@@ -14,7 +14,7 @@
 <?php
       $host="localhost";
       $user="b500024779_proyecto";
-      $pass="edw910";
+      $pass="#####";      
       $dbname="b500024779_proyecto";
       $con = ("host=$host user=$user password=$pass dbname=$dbname");
       $connection = pg_connect ($con);
