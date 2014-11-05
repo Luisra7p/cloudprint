@@ -5,9 +5,9 @@ html>
 		<link href="css/bootstrapresponsive.css" rel="stylesheet">
 	</head>
 	<body>
-		<?php
-			$host="localhost";
-			$user="b500024779_proyecto";
+	   	<?php
+		/*	$host="localhost";
+		$user="b500024779_proyecto";
 			$pass="edw910";
 			$dbname="b500024779_proyecto";
 			$connect = pg_connect("host=$host user=$user password=$pass dbname=$dbname");
@@ -23,6 +23,6 @@ else
 				
 			}
 	
-		?>
+		*/?>   
 	</body>
 </html>
